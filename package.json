@@ -1,0 +1,23 @@
+{
+  "name": "fancy-form-with-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karabayse/fancy-form-with-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karabayse/fancy-form-with-sass/issues"
+  },
+  "homepage": "https://github.com/karabayse/fancy-form-with-sass#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
