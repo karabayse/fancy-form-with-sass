@@ -2,11 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Fancy Form</title>
   </head>
   <body>
-    <h1>Fancy Form</h1>
+    <div id="container">
+      <h1>Fancy Form</h1>
+      <div id="form-box">
+        <i id="prev-btn" class="fas fa-arrow-left"></i>
+        <i id="next-btn" class="fas fa-arrow-right"></i>
+        <div id="input-group">
+          <input id="input-field" required>
+          <label id="input-label">Enter Your First Name</label>
+          <div id="input-progress"></div>
+        </div>
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+    <script src="JS/main.js" charset="utf-8"></script>
   </body>
 </html>
