@@ -91,4 +91,23 @@ h1.logo {
       background: transparent;
       box-shadow: none;
   }
+
+  #input-label {
+    position: absolute;
+    pointer-events: none;
+    top: 32px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  input:valid + #input-label {
+    top: 6px;
+    left: 42px;
+    margin-left: 0 !important;
+    font-size: 1px;
+    font-weight: normal;
+    color: $light;
+  }
 }
