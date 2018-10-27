@@ -9,3 +9,6 @@ const questions = [
 // Transition Times
 const shakeTime = 100; // Shake Transition Time
 const switchTime = 200; // Transition Between Questions
+
+// Initialize Position At First Question
+let position = 0;
