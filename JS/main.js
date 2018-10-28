@@ -22,3 +22,20 @@ const inputField = document.querySelector('#input-field');
 const inputLabel = document.querySelector('#input-label');
 const inputProgress = document.querySelector('#input-progress');
 const progress = document.querySelector('#progress-bar');
+
+// Events
+
+document.addEventListener('DOMContentLoaded', getQuestion);
+
+// Functions
+
+// Get question from array and add to Markup
+function getQuestion() {
+  // Get the current question
+  inputLabel.innerHTML = questions[position].question;
+  // Get current type
+  inputField.type = questions[position].type || 'text';
+  // Get the current answer
+  inputField.value = questions[position].answer || '';
+  // Focus on element 
+}
