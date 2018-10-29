@@ -31,11 +31,18 @@ document.addEventListener('DOMContentLoaded', getQuestion);
 
 // Get question from array and add to Markup
 function getQuestion() {
-  // Get the current question
+  // Get Current question
   inputLabel.innerHTML = questions[position].question;
   // Get current type
   inputField.type = questions[position].type || 'text';
   // Get the current answer
   inputField.value = questions[position].answer || '';
-  // Focus on element 
+  // Focus on element
+  inputField.focus();
+
+  // Set progress bar width - variable to the questions length
+  progress.style.width = (position * 100) / questions.length + '%';
+
+  // Add User Icon OR Back Arrow Depending On Question
+  prevBtn.className = position ? 'fas fa-arrow-left' : 'fas fa-user';
 }
