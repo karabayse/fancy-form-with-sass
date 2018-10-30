@@ -45,4 +45,13 @@ function getQuestion() {
 
   // Add User Icon OR Back Arrow Depending On Question
   prevBtn.className = position ? 'fas fa-arrow-left' : 'fas fa-user';
+
+  showQuestion();
+}
+
+// Display question to user
+function showQuestion() {
+  inputGroup.style.opacity = 1;
+  inputProgress.style.transition = '';
+  inputProgress.style.width = '100%';
 }
