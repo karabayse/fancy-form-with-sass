@@ -55,3 +55,12 @@ function showQuestion() {
   inputProgress.style.transition = '';
   inputProgress.style.width = '100%';
 }
+
+// Hide Question
+function hideQuestion() {
+  inputGroup.style.opacity = 0;
+  inputLabel.style.marginLeft = 0;
+  inputProgress.style.width = 0;
+  inputProgress.style.transition = 'none';
+  inputGroup.style.border = null;
+}
